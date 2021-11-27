@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="../static/style.css">
+    </head>
+    <body>
+        <form action="/" method="POST">
+            <div class="card">
+                <h2>Login</h2>
+                <div class="group">
+                    <label>Username</label>
+                    <input placeholder="Username" type="text" name="username">
+                </div>
+                <div class="group">
+                    <label>Password</label>
+                    <input placeholder="Password" type="password" name="password">
+                </div>
+                <button type="submit">Login</button>
+                <a href="{{ url_for('reg') }}">
+                    <button type="button">Registration</button>
+                </a>
+            </div>
+        </form>
+    </body>
+</html>
